@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap');
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 300px!important;
+        flex-direction: column!important;
+        position: absolute;
+        top: 0px;
+        margin: 50px 0;
+    }
+
+    .c1 { border-radius: 10px 10px 0px 0px!important; }
+
+    .c3 { border-radius: 0px 0px 10px 10px!important; }
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --pc-orange: hsl(31, 77%, 52%);
+    --pc-cyan: hsl(184, 100%, 22%);
+    --pc-darkcyan: hsl(179, 100%, 13%);
+
+    /* Neutral Colors */
+    --nc-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --nc-lightgrey: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--nc-lightgrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: transparent;
+    border: 2px solid var(--nc-lightgrey);
+    color: var(--nc-lightgrey)!important;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.column {
+    padding: 50px;
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
+.c1 {
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--pc-orange);
+} .c1 button { color: var(--pc-orange); }
+
+.c2 {
+    background-color: var(--pc-cyan);
+} .c2 button { color: var(--pc-cyan); }
+
+.c3 {
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--pc-darkcyan);
+} .c3 button { color: var(--pc-darkcyan); }
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+img, h1 {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 36px;
+    color: var(--nc-lightgrey);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--nc-white);
+    letter-spacing: 0.5px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    width: 155px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--nc-lightgrey);
+
+    position: absolute;
+    bottom: 50px;
+}
